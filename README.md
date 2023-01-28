@@ -1,4 +1,4 @@
-# Wispydutchess      Home    Info    Settings    Search    Shop
+# Wispydutchess      Home    Info    Settings    [Search](https://www.google.com/)    Shop
 
 Welcome to the definitive website for matters of Wispy Dutchesses
 
