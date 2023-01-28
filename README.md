@@ -1,3 +1,5 @@
+<p style="background-image: url(![Uploading pexels-andrew-neel-2326961.jpg…]);">
+
 # Home    Info    Settings    [Search](https://www.google.com/)    Shop
 
 Welcome to the definitive website for matters of Wispy Dutchesses
