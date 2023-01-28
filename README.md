@@ -1,1 +1,1 @@
-https://wispydutchess.github.io/greg-barbeque/
+wispydutchess.github.io/greg-barbeque/
