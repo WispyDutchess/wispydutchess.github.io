@@ -1,7 +1,7 @@
-# https://wispydutchess.github.io
-
-# hello world
-
-## there are no more infos available
+# Wispydutchess # Home Info Settings Search Shop
 ---
+
+Welcome to the definitive website for matters of Wispy Dutchesses
+---
+
 For more information, click [here](https://inkvoiid.netlify.app/)
