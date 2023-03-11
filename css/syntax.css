@@ -1,0 +1,297 @@
+/*--------------------------- Typeface ---------------------------*/
+
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+
+@font-face {
+    font-family: bauhaus;
+    src: url(../BauhausFontFamily/BauhausRegular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: bauhaus;
+    src: url(.//Shin-go/AOTFShinGoProBold.otf) format('truetype');
+    font-weight: bold;
+} 
+h1 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+h2 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+h3 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+h4 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+
+h5 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+h6 {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: normal;
+}
+p {
+    font-family: 'bauhaus', sans-serif;
+    font-weight: normal;
+}
+b {
+    font-family: 'ICA Rubrik', sans-serif;
+    font-weight: bold;
+}
+th {
+    font-family: 'bauhaus', sans-serif;
+    font-weight: normal;
+}
+nav {
+    font-family: 'bauhaus', sans-serif;
+    font-weight: normal;
+}
+
+/*------------------- Colour Controls ----------------------------*/
+
+:root {        
+    --bread:rgb(226, 221, 221); 
+    --bu:rgb(27, 27, 104);
+    --creme: oldlace;
+    --orang: rgb(232, 101, 8);     
+    --bl: rgba(0, 0, 0, 0.248);      
+}
+/*
+    --bread:#ffffff; 
+    --bu: #004e89;
+    --creme: #fdf0d5;
+    --orang: #1a659e;     
+    --bl: rgba(0, 0, 0, 0.248);
+*/
+.colour-a {
+    color: var(--bread,);
+}
+
+.colour-b {
+    color: var(--bu);
+}
+
+.colour-c {
+    color: var(--creme);
+}
+
+.colour-d {
+    color: var(--orang);
+}
+
+.colour-e {
+    color: var(--bl);
+}
+
+/*------------------------ Responsive Iframes --------------------*/
+
+.widt {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.wid {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: 500px;
+}
+
+.wid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vid {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1350px) {
+    :root {
+        --add: 20px;
+        --daa: 0;
+    }
+}
+
+/*------------------------------ elements ------------------------*/
+
+.standard-blue-boder {
+    border-color: var(--bu);
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.backgound {
+    background-color: var(--bread);
+}
+
+.ol-box {
+    background-color: var(--creme);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+}
+
+.text-title {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+header {
+    background-color: var(--bu);
+    color: rgb(233,230,230);
+    padding-left: 30px;
+    padding-top: 5px;
+    margin: 0px;
+    filter: drop-shadow(0px 8px 4px var(--bl));
+} 
+
+body {
+    margin: 0px;
+}
+
+footer {
+    background-color: var(--creme);
+}
+
+.ad {
+    margin-left: var(--add,0);
+    margin-top: var(--daa, 20px);
+}
+
+.footer-text {
+    padding-left: 30%;
+}
+
+.ol-text {
+    color: var(--creme);
+}
+
+.item-center {
+    display: block;
+    margin: auto;
+    margin: auto;
+  
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.no-u {
+    text-decoration: none;
+}
+
+.hov:hover {
+    color: var(--orang);
+}
+
+.corn {
+    border-radius: 10px;
+}
+
+.ad-pic {
+    width:100%
+}
+
+@media (max-width:1350px){
+    .ad-pic {
+        width: 300px;
+    }
+}
+
+/*---------------------- Debug colors ----------------------------*/
+/*
+.r {
+    background-color: red;
+}
+
+.g {
+    background-color: green;
+}
+
+.b {
+    background-color: blue;
+}
+
+.y {
+    background-color: yellow;
+}
+
+.p {
+    background-color: pink;
+}
+*/
+/*-------------------- Page Layout -------------------------------*/
+
+.d1 {
+    /*background: lightblue;*/
+    grid-area: header;
+}
+.d2 {
+    background: lightcoral;
+}
+
+.d3 {
+    /*background: plum;*/
+    grid-area: article;
+}
+.d4 {
+    /*background: lightgoldenrodyellow;*/
+    grid-area: advert;
+}
+.d5 {
+    /*background: lightgreen;*/
+    grid-area: footer;
+}
+
+.container {
+    width: auto;
+    /*background: lightgray;*/
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: fit-content Fit-Content fit-content;
+    grid-gap: 0px 0px;
+    grid-template-areas: 
+      "header header header"
+      ". article advert"
+      "footer footer footer"
+      ;
+}
+
+@media (max-width:1350px) {
+    .container {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+          "header header"
+          "article article"
+          "advert advert"
+          "footer footer"                     
+    }               
+}
