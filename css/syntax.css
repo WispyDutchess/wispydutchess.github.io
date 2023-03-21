@@ -54,6 +54,11 @@ nav {
     font-weight: normal;
 }
 
+li {
+    font-family: 'bauhaus', sans-serif;
+    font-weight: normal;
+}
+
 /*------------------- Colour Controls ----------------------------*/
 
 :root {        
@@ -88,6 +93,10 @@ nav {
 
 .colour-e {
     color: var(--bl);
+}
+
+.text-colour {
+    color: black;
 }
 
 /*------------------------ Responsive Iframes --------------------*/
@@ -179,6 +188,10 @@ footer {
     background-color: var(--creme);
 }
 
+p {
+    padding-left: 20px;
+}
+
 .ad {
     margin-left: var(--add,0);
     margin-top: var(--daa, 20px);
@@ -216,7 +229,7 @@ footer {
 }
 
 .ad-pic {
-    width:100%
+    width:100%;
 }
 
 @media (max-width:1350px){
@@ -224,6 +237,25 @@ footer {
         width: 300px;
     }
 }
+
+.pic {
+    width: 100%;
+}
+
+.rule {
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: default;
+}
+
+hr {
+    border-color: #ccc;
+}
+
+
+a hr {
+    border-color: #ccc;
+  }
 
 /*---------------------- Debug colors ----------------------------*/
 /*
@@ -255,6 +287,7 @@ footer {
 }
 .d2 {
     background: lightcoral;
+    
 }
 
 .d3 {
@@ -294,4 +327,122 @@ footer {
           "advert advert"
           "footer footer"                     
     }               
+}
+
+@media (min-width:900px) {
+
+    .cont-container {
+        width: auto;
+        margin: 20px ;    
+        /*background-color: aqua;*/
+
+        columns: 2;
+        /* grid-auto-rows: 10px; */
+        /*grid-template-rows: fit-content ; */
+        column-gap: 20px;
+    }
+
+
+    .cont-container > .card {
+        margin: 0 0 20px;    
+    }
+
+    .card {
+        overflow: hidden;
+        width: fit;
+        max-width: 100%;
+        break-inside: avoid;
+    }
+
+}
+
+
+
+
+
+/*--------------------------------- Gallery ----------------------------------*/
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 216px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+/*-------------------------------- Image Grid --------------------------------*/
+
+.image-grid {
+    --gap: 5px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+}
+
+.image-grid > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+/* Anything under 1350px */
+@media screen and (max-width: 1350px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+/*--------------------------------- Article Grid -----------------------------*/
+
+.article-pic {
+    grid-area: Image;
+   /* background-color: red; */
+    size: 100%;
+}
+
+.article-text {
+    grid-area: Desc;
+   /* background-color: blue; */
+}
+
+.article-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: fit-content;
+    grid-template-areas: "Desc Image";
+   /* background-color: aqua; */
 }
