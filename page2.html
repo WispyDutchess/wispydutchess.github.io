@@ -5,25 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WispyDutchess</title>
         <link rel="stylesheet" type="text/css" href="css/syntax.css">
-        <link rel="icon" type="image/x-icon" href="fovavorate.png">
+        <link rel="icon" type="image/x-icon" href="./Images/fovavorate.png?">
     </head>
     <body class="container backgound">
 
         <header class="d1">
 
-            <h1 class="colour-a">Welcome to WispyDutchess</h1> <!-- Website Title -->
+            <h1 class="text-colour">Welcome to WispyDutchess</h1> <!-- Website Title -->
 
             <nav> <!-- Page Tabs -->
                 
                <table Border="0" cellpadding="10" cellspacing="0">  
 
-                    <tr class="ol-text">
-                        <th> <a href="index.html" class="colour-a no-u hov">Home</a></th>
-                        <th> <a href="./page1.html" class="colour-a no-u hov">Adventures</a></th>
-                        <th> <a href="./page2.html" class="colour-a no-u hov">Collections & Hobbies</a></th>
-                        <th> <a href="./page3.html" class="colour-a no-u hov">Gift Ideas</a> </th>
-                        <th> <a href="./page4.html" class="colour-a no-u hov">Recipes</a></th>
-                        <th> <a href="./page5.html" class="colour-a no-u hov">Page 5</a></th>
+                    <tr class="nav-bar">
+                        <th> <a href="index.html" >Home</a></th>
+                        <th> <a href="./page1.html" >Adventures</a></th>
+                        <th> <a href="./page2.html" >Hobbies</a></th>
+                        <th> <a href="./page3.html" >Gift Ideas</a> </th>
+                        <th> <a href="./page4.html" >Recipes</a></th>
+                        <th> <a href="./page5.html" >Page 5</a></th>
                     </tr>
                 </table>        
 
@@ -35,7 +35,7 @@
 
             <section class="ol-box">
 
-                <h2 class="text-title"> Welcome to Collections & Hobbies.</h2>
+                <h2 class="text-title">Hobbies.</h2>
 
                 <hr>
                 
@@ -45,22 +45,68 @@
 
             </section>
 
-            <article class="ol-box">
+            <a href="https://www.discogs.com/user/WispyDutchess/collection" target="_blank">
 
-                <h2 class="text-title">Records</h2>
+                <article class="ol-box article-container">
 
-                <hr>
+                    <div class="article-text">
 
-                <p>
-                    I recently purchased a record player, why? Because why not. Since getting it I've enjoyed 
-                    <a href="https://www.discogs.com/user/WispyDutchess/collection" target="_blank">Record Collection</a></th>
-                </p>      
+                        <h2 class="text-title">Record collection</h2>
 
-            </article>
+                        <hr class="rule">
 
-            <article class="ol-box">
-                <h2 class="text-title"></h2>
-            </article>
+                        <p class="text-colour">
+                            I recently purchased a record player, why? Because why not. Since getting it I've enjoyed...
+                        </p> 
+                    </div>
+                    
+                    <img class="pic article-pic corn" src="./Images/20230113_063430.jpg" alt="Record">
+
+                </article>
+
+            </a>
+
+            <a href="MGB.html">
+
+                <article class="ol-box article-container">
+
+                    <div class="article-text">
+
+                        <h2 class="text-title">1968 MGB GT Restoration</h2>
+
+                        <hr class="rule">
+
+                        <p class="text-colour">
+                            Mgb Restoration Description 
+                        </p> 
+                    </div>
+                    
+                    <img class="pic article-pic corn" src="./Images/20210402_154657.jpg" alt="My MGB">
+
+                </article>
+
+            </a>
+
+            <a href="">
+
+                <article class="ol-box article-container">
+
+                    <div class="article-text text-colour">
+
+                        <h2 class="text-title">Yachting</h2>
+
+                        <hr class="rule">
+
+                        <p class="text-colour">
+                            Yachting Description 
+                        </p> 
+                    </div>
+                    
+                    <img class="pic article-pic corn" src="Images/20180113_195104.jpg" alt="Yachting">
+
+                </article>
+
+            </a>
 
         </main>
 
@@ -77,8 +123,22 @@
 
             </p>          
 
+            <div>
+                <button class="theme" 
+                role="switch"
+                aria-label="light/dark mode"></button>
+
+                <audio src="Audio/Light-on.mp3" 
+                class="theme-audio--light-on" 
+                data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+                <audio src="Audio/Light-off.mp3" 
+                class="theme-audio--light-off" 
+                data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+            </div>
+
         </footer>
         
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
 

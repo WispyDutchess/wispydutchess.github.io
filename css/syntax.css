@@ -1,6 +1,6 @@
-/*--------------------------- Typeface ---------------------------*/
-
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+
+/*--------------------------- Typeface ---------------------------*/
 
 @font-face {
     font-family: bauhaus;
@@ -12,32 +12,12 @@
     src: url(.//Shin-go/AOTFShinGoProBold.otf) format('truetype');
     font-weight: bold;
 } 
-h1 {
-    font-family: 'ICA Rubrik', sans-serif;
-    font-weight: normal;
-}
-h2 {
-    font-family: 'ICA Rubrik', sans-serif;
-    font-weight: normal;
-}
-h3 {
-    font-family: 'ICA Rubrik', sans-serif;
-    font-weight: normal;
-}
-h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'ICA Rubrik', sans-serif;
     font-weight: normal;
 }
 
-h5 {
-    font-family: 'ICA Rubrik', sans-serif;
-    font-weight: normal;
-}
-h6 {
-    font-family: 'ICA Rubrik', sans-serif;
-    font-weight: normal;
-}
-p {
+p, th, nav, li {
     font-family: 'bauhaus', sans-serif;
     font-weight: normal;
 }
@@ -45,34 +25,94 @@ b {
     font-family: 'ICA Rubrik', sans-serif;
     font-weight: bold;
 }
-th {
-    font-family: 'bauhaus', sans-serif;
-    font-weight: normal;
-}
-nav {
-    font-family: 'bauhaus', sans-serif;
-    font-weight: normal;
-}
 
-li {
-    font-family: 'bauhaus', sans-serif;
-    font-weight: normal;
-}
 
 /*------------------- Colour Controls ----------------------------*/
 
 :root {        
-    --bread:rgb(226, 221, 221); 
-    --bu:rgb(27, 27, 104);
-    --creme: oldlace;
-    --orang: rgb(232, 101, 8);     
-    --bl: rgba(0, 0, 0, 0.248);      
+    --bread-light:rgb(241, 241, 241); 
+    --bu-light:rgb(27, 27, 104);
+    --creme-light: white;
+    --orang-light: rgb(232, 101, 8);     
+    --bl-light: rgba(0, 0, 0, 0.248);
+    --text-light: black;
+    --rule-light: #ccc;
+    --grad-light: linear-gradient(to bottom right, blue, pink);
+
+
+    --bread-dark:rgb(43, 44, 50); 
+    --bu-dark:rgb(27, 27, 104);
+    --creme-dark: rgb(51, 51, 59);
+    --orang-dark: rgb(232, 101, 8);     
+    --bl-dark: rgb(0, 0, 0, 0.248);
+    --text-dark: rgb(202, 202, 202);
+    --rule-dark: rgb(163, 161, 161);     
+    --grad-dark: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(73, 2, 40));
+
+
 }
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --bread: var(--bread-dark);
+        --bu: var(--bu-dark);
+        --creme: var(--creme-dark);      
+        --orang: var(--orang-dark);    
+        --bl: var(--bl-dark);
+        --text: var(--text-dark);    
+        --rule: var(--rule-dark);
+        --grad: var(--grad-dark);
+    }
+
+}
+
+@media(prefers-color-scheme: light) {
+    :root {
+        --bread: var(--bread-light);
+        --bu: var(--bu-light);
+        --creme: var(--creme-light);      
+        --orang: var(--orang-light);    
+        --bl: var(--bl-light);
+        --text: var(--text-light);    
+        --rule: var(--rule-light);
+        --grad: var(--grad-light);
+    }
+
+}
+
+[color-scheme="dark"] {
+    --bread: var(--bread-dark);
+    --bu: var(--bu-dark);
+    --creme: var(--creme-dark);      
+    --orang: var(--orang-dark);    
+    --bl: var(--bl-dark);
+    --text: var(--text-dark);    
+    --rule: var(--rule-dark);
+    --grad: var(--grad-dark);
+}
+
+[color-scheme="light"] {
+    --bread: var(--bread-light);
+    --bu: var(--bu-light);
+    --creme: var(--creme-light);      
+    --orang: var(--orang-light);    
+    --bl: var(--bl-light);
+    --text: var(--text-light);    
+    --rule: var(--rule-light);
+    --grad: var(--grad-light);
+}
+
 /*
     --bread:#ffffff; 
     --bu: #004e89;
     --creme: #fdf0d5;
     --orang: #1a659e;     
+    --bl: rgba(0, 0, 0, 0.248);
+
+    --bread:rgb(226, 221, 221); 
+    --bu:rgb(27, 27, 104);
+    --creme: oldlace;
+    --orang: rgb(232, 101, 8);     
     --bl: rgba(0, 0, 0, 0.248);
 */
 .colour-a {
@@ -96,7 +136,11 @@ li {
 }
 
 .text-colour {
-    color: black;
+    color: var(--text);
+} 
+
+.colour-g {
+    color: var(--grad);
 }
 
 /*------------------------ Responsive Iframes --------------------*/
@@ -147,32 +191,32 @@ li {
 
 /*------------------------------ elements ------------------------*/
 
-.standard-blue-boder {
+/* .standard-blue-boder {
     border-color: var(--bu);
     border-width: 6px;
     border-style: solid;
     border-radius: 10px;
-}
-
-.backgound {
-    background-color: var(--bread);
-}
+} */
 
 .ol-box {
     background-color: var(--creme);
-    padding: 10px;
+    padding: 5px 20px 10px 20px;
     margin: 20px;
     border-radius: 10px;
     filter: drop-shadow(10px 8px 4px var(--bl));
+    color: var(--text);
 }
 
 .text-title {
     padding-top: 10px;
     padding-left: 20px;
+    color: var(--text);
+    /* may be able to remove/replace */
 }
 
 header {
-    background-color: var(--bu);
+    /*background-color: var(--bu);*/
+    background-image: var(--grad);
     color: rgb(233,230,230);
     padding-left: 30px;
     padding-top: 5px;
@@ -186,30 +230,33 @@ body {
 
 footer {
     background-color: var(--creme);
-}
 
-p {
-    padding-left: 20px;
-}
-
-.ad {
-    margin-left: var(--add,0);
-    margin-top: var(--daa, 20px);
 }
 
 .footer-text {
     padding-left: 30%;
+    color: var(--text);
+
+    /* Incorperate into above */
 }
 
-.ol-text {
-    color: var(--creme);
+/* p { */
+    /* pushes all paragraph text over */
+    /* padding-left: 20px; */
+    /* may be able to remove, with adjustment in ol-box */
+/* } */
+
+.ad { 
+    /* Adjusts Ad Box Placement */
+    margin-left: var(--add,0);
+    margin-top: var(--daa, 20px);
 }
 
 .item-center {
     display: block;
     margin: auto;
     margin: auto;
-  
+  /* may be redundant */
 }
 
 .txt-center {
@@ -217,22 +264,25 @@ p {
 }
 
 .no-u {
+    /* for removing decoration in links */
     text-decoration: none;
-}
-
-.hov:hover {
-    color: var(--orang);
+    /* May be able to encorperate into something else */
 }
 
 .corn {
+    /* applies corner radius when applied, for use on images or iframes */
     border-radius: 10px;
+    /* could be encorperated into something else */
 }
 
 .ad-pic {
+    /* width of pic in ad for use as variable* */
     width:100%;
+    /* optimize */
 }
 
 @media (max-width:1350px){
+    /* stops ad getting too big  */
     .ad-pic {
         width: 300px;
     }
@@ -249,13 +299,96 @@ p {
 }
 
 hr {
-    border-color: #ccc;
+    border-color: var(--rule);
 }
 
 
 a hr {
-    border-color: #ccc;
+    border-color: var(--rule);
   }
+
+.decor {
+    background-color: var(--creme);
+    background-image: url(".././Images/20210402_154657.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 350px;
+}
+
+.decor > h1, a {
+    color: rgb(222, 222, 222);
+    /* background-color: rgb(162, 156, 156, .5);
+    padding: 5px; */
+}
+
+.space {
+    height: 500px;
+}
+
+h2, h3 {
+    background-image: var(--grad);
+    color: var(--creme);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 20px 20px 5px 0;
+}
+
+.inset {
+    inset: 0px -5px 15px grey;
+}
+
+.backgound {
+    background-color: var(--bread);
+}
+
+/* .nav > h1 {
+    color: red;
+} */
+
+/* .nav > nav > table > tr > th > a {
+    text-decoration: none;
+    color: aquamarine;
+} */
+
+/* ----------------------------- darkmode button -----------------------------*/
+
+.theme {
+    background-color: var(--grad);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--bread);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-left: 200px;
+}
+
+.theme:is(:hover, :focus) {
+    background-color: var(--orang);
+    opacity: .8;
+}
+
+
+
+
+
+/* ------------------------------- nav -------------------------------------- */
+
+.nav-bar > th > a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-bar :hover {
+    color: var(--orang);
+}
+
+.hov:hover {
+    color: var(--orang);
+}
 
 /*---------------------- Debug colors ----------------------------*/
 /*
@@ -282,7 +415,7 @@ a hr {
 /*-------------------- Page Layout -------------------------------*/
 
 .d1 {
-    /*background: lightblue;*/
+    /* Header Placement */
     grid-area: header;
 }
 .d2 {
@@ -291,19 +424,21 @@ a hr {
 }
 
 .d3 {
-    /*background: plum;*/
+    /* Article Placement */
     grid-area: article;
 }
 .d4 {
-    /*background: lightgoldenrodyellow;*/
+    /* Ad Placement */
     grid-area: advert;
 }
 .d5 {
-    /*background: lightgreen;*/
+    /* Footer Placement */
     grid-area: footer;
 }
 
 .container {
+
+    /* Website Container */
     width: auto;
     /*background: lightgray;*/
     display: grid;
@@ -317,7 +452,7 @@ a hr {
       ;
 }
 
-@media (max-width:1350px) {
+@media (max-width:1350px) { /* Website Size Responsiveness */
     .container {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr auto;
@@ -328,6 +463,8 @@ a hr {
           "footer footer"                     
     }               
 }
+
+/* ----------------------------- Section Splitter --------------------------- */
 
 @media (min-width:900px) {
 
@@ -356,11 +493,8 @@ a hr {
 
 }
 
-
-
-
-
 /*--------------------------------- Gallery ----------------------------------*/
+                             /* Work In Progress */
 
 div.gallery {
     margin: 5px;
@@ -406,7 +540,6 @@ div.gallery {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .image-grid-col-2 {
@@ -418,7 +551,7 @@ div.gallery {
 }
 
 /* Anything under 1350px */
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
     .image-grid {
         --num-cols: 2;
         --row-height: 200px;
@@ -430,7 +563,10 @@ div.gallery {
 .article-pic {
     grid-area: Image;
    /* background-color: red; */
+    width:100%;
     size: 100%;
+    
+    align-content: right;
 }
 
 .article-text {
@@ -441,8 +577,32 @@ div.gallery {
 .article-container {
     width: auto;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content;
     grid-template-areas: "Desc Image";
    /* background-color: aqua; */
+}
+
+a {
+    text-decoration: none;
+}
+
+div.article-text p {
+    color: var(--text);
+}
+
+div.article-text a {
+    background-image: var(--grad);
+    color: var(--text);
+    padding: 1px 3px 1px 3px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 1px var(--bl));
+}
+
+.ol-box a {
+    background-image: var(--grad);
+    color: var(--text);
+    padding: 1px 3px 1px 3px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 1px var(--bl));
 }
