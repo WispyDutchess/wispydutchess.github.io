@@ -5,25 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WispyDutchess</title>
         <link rel="stylesheet" type="text/css" href="css/syntax.css">
-        <link rel="icon" type="image/x-icon" href="fovavorate.png">
+        <link rel="icon" type="image/x-icon" href="./Images/fovavorate.png?">
     </head>
     <body class="container backgound">
 
         <header class="d1">
 
-            <h1 class="colour-a">Welcome to WispyDutchess</h1> <!-- Website Title -->
+            <h1 class="text-colour">Welcome to WispyDutchess</h1> <!-- Website Title -->
 
             <nav> <!-- Page Tabs -->
                 
                <table Border="0" cellpadding="10" cellspacing="0">  
 
-                    <tr class="ol-text">
-                        <th> <a href="index.html" class="colour-a no-u hov">Home</a></th>
-                        <th> <a href="./page1.html" class="colour-a no-u hov">Adventures</a></th>
-                        <th> <a href="./page2.html" class="colour-a no-u hov">Collections & Hobbies</a></th>
-                        <th> <a href="./page3.html" class="colour-a no-u hov">Gift Ideas</a> </th>
-                        <th> <a href="./page4.html" class="colour-a no-u hov">Recipes</a></th>
-                        <th> <a href="./page5.html" class="colour-a no-u hov">Page 5</a></th>
+                    <tr class="nav-bar">
+                        <th> <a href="index.html" >Home</a></th>
+                        <th> <a href="./page1.html" >Adventures</a></th>
+                        <th> <a href="./page2.html" >Hobbies</a></th>
+                        <th> <a href="./page3.html" >Gift Ideas</a> </th>
+                        <th> <a href="./page4.html" >Recipes</a></th>
+                        <th> <a href="./page5.html" >Page 5</a></th>
                     </tr>
                 </table>        
 
@@ -113,7 +113,22 @@
                 Thanks for visiting. <br><br>     
             </p>
 
-        </Footer>
+            <div>
+                <button class="theme" 
+                role="switch"
+                aria-label="light/dark mode"></button>
+
+                <audio src="Audio/Light-on.mp3" 
+                class="theme-audio--light-on" 
+                data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+                <audio src="Audio/Light-off.mp3" 
+                class="theme-audio--light-off" 
+                data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+            </div>
+
+        </footer>
+        
+        <script type="module" src="js/main.js"></script>
 
     </body>
 </html>
