@@ -36,6 +36,7 @@ b {
     --orang: rgb(232, 101, 8);     
     --bl: rgba(0, 0, 0, 0.248);
     --text: black;
+    --text2: white;
     --rule: #ccc;
     --grad: linear-gradient(to bottom right, blue, pink);
 
@@ -70,6 +71,7 @@ b {
     --orang: rgb(232, 101, 8);     
     --bl: rgb(0, 0, 0, 0.248);
     --text: rgb(202, 202, 202);
+    --text2: rgb(202, 202, 202);
     --rule: rgb(163, 161, 161);     
     --grad: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(73, 2, 40));
 
@@ -82,6 +84,9 @@ b {
     --colour4: #626e85;
     --colour5: #efd9a0;
     --colour6: rgba(216,165,30,0.42);
+
+    /* :rgba(216,165,30,0.42); */
+    /* :linear-gradient(to bottom left, rgba(216, 165, 30, 0.42), rgba(216, 165, 30, 0.0)); */
 
 }
 
@@ -352,7 +357,7 @@ a hr {
 }
 
 .decor > h1, a {
-    color: rgb(222, 222, 222);
+    color: var(--text2);
     /* background-color: rgb(162, 156, 156, .5);
     padding: 5px; */
 }
@@ -363,7 +368,6 @@ a hr {
 
 h2, h3 {
     background-image: var(--grad);
-    color: var(--creme);
     border-radius: 5px;
     width: fit-content;
     padding: 20px 20px 5px 0;
@@ -397,12 +401,23 @@ h2, h3 {
     cursor: pointer;
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 .theme:is(:hover, :focus) {
     background-color: var(--orang);
     opacity: .8;
+}
+
+.theme-box {
+    display: grid;
+    place-items: right;
+    width: 100%;
+    justify-content: right;
+}
+
+.theme-cont {
+    width: fit-content;
+    padding: 20px;
 }
 
 
@@ -419,7 +434,7 @@ h2, h3 {
 
 .nav-bar > th > a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--text2);
 }
 
 .nav-bar :hover {
@@ -641,8 +656,16 @@ div.article-text a {
 
 .ol-box a {
     background-image: var(--grad);
-    color: var(--text);
+    color: var(--text2);
     padding: 1px 3px 1px 3px;
     border-radius: 5px;
     filter: drop-shadow(2px 2px 1px var(--bl));
+}
+
+.ol-box h2, .ol-box h3 {
+    color: var(--text2);
+}
+
+h1 {
+    color: var(--text2);
 }
