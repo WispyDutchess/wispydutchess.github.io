@@ -30,29 +30,40 @@ b {
 /*------------------- Colour Controls ----------------------------*/
 
 :root {        
-    --bread-light:rgb(241, 241, 241); 
-    --bu-light:rgb(27, 27, 104);
-    --creme-light: white;
-    --orang-light: rgb(232, 101, 8);     
-    --bl-light: rgba(0, 0, 0, 0.248);
-    --text-light: black;
-    --rule-light: #ccc;
-    --grad-light: linear-gradient(to bottom right, blue, pink);
+    --bread:rgb(241, 241, 241); 
+    --bu:rgb(27, 27, 104);
+    --creme: white;
+    --orang: rgb(232, 101, 8);     
+    --bl: rgba(0, 0, 0, 0.248);
+    --text: black;
+    --rule: #ccc;
+    --grad: linear-gradient(to bottom right, blue, pink);
 
 
-    --bread-dark:rgb(43, 44, 50); 
+    /* --bread-dark:rgb(43, 44, 50); 
     --bu-dark:rgb(27, 27, 104);
     --creme-dark: rgb(51, 51, 59);
     --orang-dark: rgb(232, 101, 8);     
     --bl-dark: rgb(0, 0, 0, 0.248);
     --text-dark: rgb(202, 202, 202);
     --rule-dark: rgb(163, 161, 161);     
-    --grad-dark: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(73, 2, 40));
+    --grad-dark: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(73, 2, 40)); */
 
 
 }
 
-@media(prefers-color-scheme: dark) {
+.darkmode {
+    --bread:rgb(43, 44, 50); 
+    --bu:rgb(27, 27, 104);
+    --creme: rgb(51, 51, 59);
+    --orang: rgb(232, 101, 8);     
+    --bl: rgb(0, 0, 0, 0.248);
+    --text: rgb(202, 202, 202);
+    --rule: rgb(163, 161, 161);     
+    --grad: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(73, 2, 40));
+}
+
+/* @media(prefers-color-scheme: dark) {
     :root {
         --bread: var(--bread-dark);
         --bu: var(--bu-dark);
@@ -64,9 +75,9 @@ b {
         --grad: var(--grad-dark);
     }
 
-}
+} */
 
-@media(prefers-color-scheme: light) {
+/* @media(prefers-color-scheme: light) {
     :root {
         --bread: var(--bread-light);
         --bu: var(--bu-light);
@@ -78,9 +89,9 @@ b {
         --grad: var(--grad-light);
     }
 
-}
+} */
 
-[color-scheme="dark"] {
+/* .darkmode {
     --bread: var(--bread-dark);
     --bu: var(--bu-dark);
     --creme: var(--creme-dark);      
@@ -89,9 +100,9 @@ b {
     --text: var(--text-dark);    
     --rule: var(--rule-dark);
     --grad: var(--grad-dark);
-}
+} */
 
-[color-scheme="light"] {
+/* [color-scheme="light"] {
     --bread: var(--bread-light);
     --bu: var(--bu-light);
     --creme: var(--creme-light);      
@@ -100,7 +111,7 @@ b {
     --text: var(--text-light);    
     --rule: var(--rule-light);
     --grad: var(--grad-light);
-}
+} */
 
 /*
     --bread:#ffffff; 
@@ -369,6 +380,12 @@ h2, h3 {
 .theme:is(:hover, :focus) {
     background-color: var(--orang);
     opacity: .8;
+}
+
+
+.darkmodesvg {
+    width: 100%;
+
 }
 
 
