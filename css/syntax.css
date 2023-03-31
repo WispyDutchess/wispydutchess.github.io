@@ -233,6 +233,59 @@ b {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------ elements ------------------------*/
 
 /* .standard-blue-boder {
@@ -242,31 +295,11 @@ b {
     border-radius: 10px;
 } */
 
-.ol-box {
-    background-color: var(--creme);
-    padding: 5px 20px 10px 20px;
-    margin: 20px;
-    border-radius: 10px;
-    filter: drop-shadow(10px 8px 4px var(--bl));
-    color: var(--text);
-}
 
-.text-title {
-    padding-top: 10px;
-    padding-left: 20px;
-    color: var(--text);
-    /* may be able to remove/replace */
-}
 
-header {
-    /*background-color: var(--bu);*/
-    background-image: var(--grad);
-    color: rgb(233,230,230);
-    padding-left: 30px;
-    padding-top: 5px;
-    margin: 0px;
-    filter: drop-shadow(0px 8px 4px var(--bl));
-} 
+
+
+
 
 body {
     margin: 0px;
@@ -293,9 +326,7 @@ body {
   /* may be redundant */
 }
 
-.txt-center {
-    text-align: center;
-}
+
 
 .no-u {
     /* for removing decoration in links */
@@ -326,46 +357,33 @@ body {
     width: 100%;
 }
 
-.rule {
-    margin-left: 0px;
-    margin-right: 10px;
-    background-color: default;
-}
-
 hr {
     border-color: var(--rule);
 }
 
 
-a hr {
+/* a hr {
     border-color: var(--rule);
-  }
+  } */
 
-.decor {
-    background-color: var(--creme);
-    background-image: url(".././Images/20210402_154657.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 350px;
-}
 
-.decor > h1, a {
-    color: var(--text2);
+
+/* .decor > h1, a {
+    color: var(--text2); */
     /* background-color: rgb(162, 156, 156, .5);
     padding: 5px; */
-}
+/* } */
 
 .space {
     height: 500px;
 }
 
-h2, h3 {
+/* h2, h3 {
     background-image: var(--grad);
     border-radius: 5px;
     width: fit-content;
     padding: 20px 20px 5px 0;
-}
+} */
 
 .inset {
     inset: 0px -5px 15px grey;
@@ -383,6 +401,62 @@ h2, h3 {
     text-decoration: none;
     color: aquamarine;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------ footer -------------------------- */
 
 footer {
@@ -425,9 +499,6 @@ footer {
     grid-gap: 0px;
 }
 
-
-
-
 /* ----------------------------- darkmode button -----------------------------*/
 
 .theme {
@@ -439,26 +510,12 @@ footer {
     cursor: pointer;
     display: grid;
     place-items: center;
-    
 }
 
-.theme:is(:hover, :focus) {
+.theme:is(:hover) {
     background-color: var(--orang);
     opacity: .8;
 }
-
-
-
-
-
-/* .darkmodesvg {
-    width: 100%;
-
-} */
-
-
-
-
 
 /* ------------------------------- nav -------------------------------------- */
 
@@ -474,6 +531,193 @@ footer {
 .hov:hover {
     color: var(--orang);
 }
+
+/*----------------------------------- Header ---------------------------------*/
+
+/* header { */
+    /*background-color: var(--bu);*/
+    /* padding-left: 30px;
+    padding-top: 5px;
+    margin: 0px;
+    background-image: var(--grad);
+    color: rgb(233,230,230);
+    filter: drop-shadow(0px 8px 4px var(--bl));
+}  */
+
+.normal-header {
+    /*background-color: var(--bu);*/
+    padding-left: 30px;
+    padding-top: 5px;
+    margin: 0px;
+    background-image: var(--grad);
+    color: var(--text2);
+    filter: drop-shadow(0px 8px 4px var(--bl));
+} 
+
+/*-------------------------------- fancy Header ------------------------------*/
+
+.fancy-header div {
+    padding-left: 30px;
+    padding-top: 5px;
+    margin: 0px;
+    color: var(--text2);
+    filter: drop-shadow(0px 8px 4px var(--bl));
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.49), transparent);
+}
+
+.fancy-header {
+    background-color: var(--creme);
+    background-image: url(".././Images/20210402_154657.jpg");  /* mgb */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 350px;
+}
+
+/*----------------------------- Page Description -----------------------------*/
+
+.page-description {
+    background-color: var(--creme);
+    padding: 20px 20px 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+}
+
+.page-description h2, .page-description h3 {
+    margin: 0px;
+    width: fit-content;
+    padding: 5px 20px;
+    color: var(--text2);
+    background-image: var(--grad);
+    border-radius: 5px;
+}
+
+.page-description p {
+    text-align: justify;
+    color: var(--text);
+}
+
+/*------------------------------ Article link Box ----------------------------*/
+
+.article-container img {
+    width:100%;
+    size: 100%;
+    grid-area: Image;
+    align-content: right; 
+    border-radius: 10px;
+    /* background-color: red; */
+}
+
+.article-container div {
+    grid-area: Desc;
+}
+
+.article-container hr {
+    margin-left: 0px;
+    margin-right: 10px;
+    border-color: var(--rule);    
+}
+
+.article-container p {
+    margin-right: 10px;
+    color: var(--text);
+    text-align: justify;
+   /* background-color: blue; */
+}
+
+.article-container h2 {
+    width: fit-content;
+    margin: 0%;
+    margin-right: 10px;
+    padding: 5px 20px;
+    color: var(--text2);
+    background-image: var(--grad);
+    border-radius: 5px;
+}
+
+.article-container ul {
+    color: var(--text2);
+}
+
+.article-container:hover {
+    transform: scale(1.01);
+    
+}
+
+.article-container {
+    width: auto;
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--creme);
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content;
+    grid-template-areas: "Desc Image";
+    transition: 200ms;
+}
+
+@media (max-width:1000px) { /* Website Size Responsiveness */
+    .article-container {
+        width: auto;
+        display: grid;
+        padding: 20px;
+        margin: 20px;
+        background-color: var(--creme);
+        border-radius: 10px;
+        filter: drop-shadow(10px 8px 4px var(--bl));
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content 1fr;
+        grid-template-areas: 
+        "Desc"
+        "Image";
+    }
+}
+
+/*----------------------------- Photo Album Link -----------------------------*/
+
+.photo-album {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--creme);
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    transition: 200ms;
+}
+
+.photo-album img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-album:hover {
+    transform: scale(1.01);
+}
+
+.photo-album h2 {
+    width: fit-content;
+    margin: 10px 10px 0px 0px;
+    padding: 5px 20px;
+    color: var(--text2);
+    background-image: var(--grad);
+    border-radius: 5px;
+}
+
+.photo-album p {
+    margin-right: 10px;
+    color: var(--text);
+    text-align: justify;
+}
+
+@media (min-width:900px) {
+    .photo-album {
+        margin: 0px;
+    }
+}
+
+
 
 /*---------------------- Debug colors ----------------------------*/
 /*
@@ -564,9 +808,8 @@ footer {
         column-gap: 20px;
     }
 
-
     .cont-container > .card {
-        margin: 0 0 20px;    
+        margin: 0 0 20px 0;    
     }
 
     .card {
@@ -575,8 +818,279 @@ footer {
         max-width: 100%;
         break-inside: avoid;
     }
-
 }
+
+@media (max-width:900px){
+    .card {
+        margin: 0 20px 20px 20px;
+    }
+}
+
+/*------------------------------- Gallery Grid -------------------------------*/
+
+/* for easy setup use a>div>image */
+
+.gallery-container {
+    width: auto;
+    margin: 20px ;    
+    columns: 4;
+    column-gap: 10px;
+    /* background-color: red; */
+}
+
+@media (max-width:900px) {
+
+    .gallery-container {
+        width: auto;
+        margin: 20px ;    
+        columns: 2;
+        column-gap: 10px;
+        /* background-color: red; */
+    }
+}
+
+.gallery-container div {
+    width: fit;
+    padding: 10px 10px 30px 10px ;
+    margin-bottom: 10px;
+    background-color: var(--creme);
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    transition: 200ms;
+}
+
+.gallery-container img { 
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.gallery-container div:hover {
+    transform: scale(1.02);
+}
+
+/* .gallery-container a {
+    pointer-events: none;
+} */
+
+/*---------------------------------- Pages -----------------------------------*/
+
+.pages {
+    width: auto;
+    margin: 20px;
+}
+
+.pages div {
+    width: fit;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+}
+
+.pages img {
+    width: 100%;   
+    transition: 200ms;
+}
+
+.pages img:hover {
+    transform: scale(1.05);
+    
+}
+
+.pages > div > div {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.43), transparent);
+    pointer-events: none;
+}
+
+@media (max-width:900px) {
+    .pages div {
+        height: 200px;
+    }
+}
+
+@media (max-width:500px) {
+    .pages div {
+        height: 100px;
+    }
+
+    .pages > div > div {
+        font-size: 30px;
+    }
+}
+
+/*-------------------------------- Focus box ---------------------------------*/
+
+.focus-box-link {
+    background-image: var(--grad);
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    color: var(--text2);
+    text-align: center;
+    transition: 200ms;
+}
+
+.focus-box-link:hover {
+    transform: scale(1.02);
+    
+}
+
+.focus-box {
+    background-image: var(--grad);
+    margin: 0 20px;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    color: var(--text2);
+    text-align: center;
+}
+
+.focus-box-link h2, .focus-box-link h3 {
+    color: var(--text2);
+}
+
+/*-------------------------- article with no picture -------------------------*/
+
+.article {
+    margin: 20px;
+    padding: 20px 20px 15px 20px;
+    color: var(--text);
+    background-color: var(--creme);
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+}
+
+.article h2, .article h3 {
+    width: fit-content;
+    margin: 0px;
+    padding: 5px 20px;
+    color: var(--text2);
+    background-image: var(--grad);
+    border-radius: 5px;
+}
+
+.article iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.article .vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------- lightbox ---------------------------------*/
+
+/* we will see */
+/* 
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.lightbox__inner {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100px;
+    background: var(--bread);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3 );
+    border-radius: 10px;
+}
+
+.lightbox__close {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.lightbox__close:hover {
+    color: rgb(0, 0, 0, 0.);
+} */
+
+/*------------------------------- new lightbox -------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------- Gallery ----------------------------------*/
                              /* Work In Progress */
@@ -645,47 +1159,10 @@ div.gallery {
 
 /*--------------------------------- Article Grid -----------------------------*/
 
-.article-pic {
-    grid-area: Image;
-   /* background-color: red; */
-    width:100%;
-    size: 100%;
-    
-    align-content: right;
-}
-
-.article-text {
-    grid-area: Desc;
-   /* background-color: blue; */
-}
-
-.article-container {
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content;
-    grid-template-areas: "Desc Image";
-   /* background-color: aqua; */
-}
-
-a {
-    text-decoration: none;
-}
-
-div.article-text p {
-    color: var(--text);
-}
-
-div.article-text a {
-    background-image: var(--grad);
-    color: var(--text);
-    padding: 1px 3px 1px 3px;
-    border-radius: 5px;
-    filter: drop-shadow(2px 2px 1px var(--bl));
-}
 
 /* ------------------------ ol box ------------------------- */
 
+/* link decoration */
 .ol-box a {
     background-image: var(--grad);
     color: var(--text2);
@@ -694,10 +1171,56 @@ div.article-text a {
     filter: drop-shadow(2px 2px 1px var(--bl));
 }
 
+a {
+    text-decoration: none;
+}
+
 .ol-box h2, .ol-box h3 {
+    color: var(--text);
+}
+
+/* h1 {
+    color: var(--text2);
+} */
+
+/*----------------------------- random bullshit ------------------------------*/
+
+.bgc {
+    background-image: var(--grad);
+}
+
+.nono {
+    margin: 0px;
     color: var(--text2);
 }
 
-h1 {
+.colo, .colo h2, .colo h3 {
     color: var(--text2);
 }
+
+.trans:hover {
+    transform: scale(1.02);
+    transition: 200ms;
+}
+
+.text-title {
+    padding-top: 10px;
+    padding-left: 20px;
+    color: var(--text);
+    /* may be able to remove/replace */
+}
+
+.txt-center {
+    text-align: center;
+}
+
+
+.ol-box {
+    background-color: var(--creme);
+    padding: 5px 20px 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 8px 4px var(--bl));
+    color: var(--text);
+}
+
