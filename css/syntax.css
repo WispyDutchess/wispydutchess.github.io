@@ -928,10 +928,36 @@ footer {
 
 /*-------------------------------- Focus box ---------------------------------*/
 
-.focus-box-link {
+@media (min-width:900px) {
+
+    .focus-box-link-container {
+        width: auto;
+        margin: 20px ;    
+        /*background-color: aqua;*/
+
+        columns: 2;
+        /* grid-auto-rows: 10px; */
+        /*grid-template-rows: fit-content ; */
+        column-gap: 20px;
+    }
+
+    .focus-box-link-container div {
+        margin-bottom: 10px;
+        max-width: 100%;
+        overflow: hidden;
+
+    }
+}
+
+@media (max-width:900px){
+    .focus-box-link-container div {
+        margin: 0 20px 20px 20px;
+    }
+}
+
+.focus-box-link-container div {
     background-image: var(--grad);
     padding: 5px 20px 10px 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
     filter: drop-shadow(10px 8px 4px var(--bl));
     color: var(--text2);
@@ -939,23 +965,22 @@ footer {
     transition: 200ms;
 }
 
-.focus-box-link:hover {
+.focus-box-link-container div:hover {
     transform: scale(1.02);
-    
+}
+
+.focus-box-link-container h2, .focus-box-link-container h3 {
+    color: var(--text2);
 }
 
 .focus-box {
-    background-image: var(--grad);
     margin: 0 20px;
     padding: 5px 20px 10px 20px;
+    color: var(--text2);
+    background-image: var(--grad);
     border-radius: 10px;
     filter: drop-shadow(10px 8px 4px var(--bl));
-    color: var(--text2);
     text-align: center;
-}
-
-.focus-box-link h2, .focus-box-link h3 {
-    color: var(--text2);
 }
 
 /*-------------------------- article with no picture -------------------------*/
