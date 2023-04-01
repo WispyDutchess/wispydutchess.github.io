@@ -624,6 +624,7 @@ footer {
     color: var(--text);
     text-align: justify;
    /* background-color: blue; */
+   font-size: 25px;
 }
 
 .article-container h2 {
@@ -634,6 +635,7 @@ footer {
     color: var(--text2);
     background-image: var(--grad);
     border-radius: 5px;
+    font-size: 35px;
 }
 
 .article-container ul {
