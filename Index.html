@@ -40,9 +40,38 @@
                     <a href="./page4.html" >Recipes</a>
                     <a href="./page5.html" >Page 5</a>
             </nav>
+
+             <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+             <!-- Top Navigation Menu -->
+             <div class="hamburg">
+                 <div class="topnav">
+                     <a href="Index.html" class="active"> <b>Bing Chilling</b></a>
+                     
+ 
+ 
+                     <!-- Navigation links (hidden by default) -->
+                     <div id="myLinks">
+                         <a href="index.html" >Home</a>
+                         <a href="./page1.html" >Adventures</a>
+                         <a href="./page2.html" >Hobbies</a>
+                         <a href="./page3.html" >Gift Ideas</a> 
+                         <a href="./page4.html" >Recipes</a>
+                         <a href="./page5.html" >Page 5</a>
+                     </div>
+ 
+                     
+                     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                     <a href="javascript:void(0);" class="icon" id="hamburg">
+                         <i class="fa fa-bars"></i>
+                     </a>
+                 </div>
+             </div>
+
         </header>
 
-        <main class="d3">           
+        <main class="d3">
 
             <Section class="page-description">
                 <h2>Home.</h2> <!-- Page Title -->
@@ -148,6 +177,7 @@
                     Phone: 021 026 28902 <br><br>
                     Email: ryan.jt.magness@gmail.com <br><br>
                     Thanks for visiting. <br><br>     
+                    № 5<br><br>
                     * Site Under Construction * <br> <br>
                     &copy WispyDutchess 2023
                 </p>
@@ -196,8 +226,10 @@
 
         </Footer>
         
+        <script type="module" src="js/hamburg.js"></script>
         <script type="module" src="js/darkmode.js"></script>
         <!-- <script type="module" src="js/main.js"></script> -->
+        
     </body>
 </html>
 

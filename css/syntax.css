@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-p, th, nav, li, svg {
+p, th, nav, li, svg, a {
     font-family: 'bauhaus', sans-serif;
     font-weight: normal;
 }
@@ -38,7 +38,7 @@ b {
     --text: black;
     --text2: white;
     --rule: #ccc;
-    --grad: linear-gradient(to bottom right, blue, pink);
+    --grad: linear-gradient(to bottom right, rgb(27, 27, 104), rgb(27, 27, 104));
 
 
     /* --- svg --- */
@@ -93,6 +93,9 @@ b {
     /* :linear-gradient(to bottom left, rgba(216, 165, 30, 0.42), rgba(216, 165, 30, 0.0)); */
 
 }
+
+
+/* --grad: linear-gradient(to bottom right, blue, pink); */
 
 /* @media(prefers-color-scheme: dark) {
     :root {
@@ -583,7 +586,8 @@ footer {
 
 .navigation-buttons {
     width: auto;
-    margin: 10px 0px;
+    margin: 0px 0px;
+    padding: 10px 0px;
     /* background-color: blue; */
 }
 
@@ -596,6 +600,12 @@ footer {
 
 .navigation-buttons a:hover {
     color: var(--orang);
+}
+
+@media (max-width: 500px) {
+    .navigation-buttons {
+        display: none;
+    }
 }
 
 /*----------------------------------- Header ---------------------------------*/
@@ -612,13 +622,17 @@ footer {
 
 .normal-header {
     /*background-color: var(--bu);*/
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-top: 5px;
     margin: 0px;
     background-image: var(--grad);
     color: var(--text2);
     filter: drop-shadow(0px 8px 4px var(--bl));
 } 
+
+.normal-header > h1, .normal-header > nav {
+    padding-left: 30px;
+}
 
 /*-------------------------------- fancy Header ------------------------------*/
 
@@ -638,6 +652,18 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 350px;
+}
+
+@media (max-width:870px) {
+    .fancy-header {
+        padding-top: 50px;
+    }    
+}
+
+@media (max-width:350px) {
+    .fancy-header {
+        padding-top: 0px;
+    }    
 }
 
 /*----------------------------- Page Description -----------------------------*/
@@ -1131,6 +1157,67 @@ footer {
 .lightbox__close:hover {
     color: rgb(0, 0, 0, 0.);
 } */
+
+/*------------------------------- Hamburger nav -------------------------------*/
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background-color: var(--creme);
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: var(--text);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    color: var(--text2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav b {
+    color: var(--text2);
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: var(--orang);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: transparent;
+    color: var(--text2)
+  }
+
+  .hamburg {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .hamburg {
+        display: block;
+    }
+
+}
 
 /*------------------------------- new lightbox -------------------------------*/
 
