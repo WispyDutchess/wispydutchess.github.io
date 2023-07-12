@@ -637,8 +637,8 @@ footer {
 /*-------------------------------- fancy Header ------------------------------*/
 
 .fancy-header div {
-    padding-left: 30px;
-    padding-top: 5px;
+    padding-left: 0px;
+    padding-top: 0px;
     margin: 0px;
     color: var(--text2);
     filter: drop-shadow(0px 8px 4px var(--bl));
@@ -650,8 +650,24 @@ footer {
     background-image: url(".././Images/20210402_154657.jpg");  /* mgb */
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: Center;
     padding-top: 350px;
+}
+
+.fancy-header h1 {
+    padding-left: 30px; 
+}
+
+.fancy-header nav {
+    padding-left: 30px;
+}
+
+.fancy-header .topnav {
+    background-image: none;
+}
+
+.fancy-header .topnav #myLinks {
+    background-color: transparent;
 }
 
 @media (max-width:870px) {
@@ -663,6 +679,12 @@ footer {
 @media (max-width:350px) {
     .fancy-header {
         padding-top: 0px;
+    }    
+}
+
+@media (max-width:500px) {
+    .fancy-header {
+        background-position: top;
     }    
 }
 
